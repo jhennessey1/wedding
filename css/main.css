@@ -146,6 +146,7 @@ textarea {
     width: 100%;
     background-color: #eb1ffd;
     color: #ffffff;
+    visibility: hidden;
 }
 
 .nav-links {
@@ -166,6 +167,7 @@ textarea {
 .nav-link > a {
     text-decoration: none;
     color: #ffffff;
+    font-size: 14px;
 }
 
 .title {
@@ -415,6 +417,10 @@ textarea {
 
     .wedding-text {
         width: 50%;
+    }
+
+    .nav-bar {
+        visibility: visible;
     }
 }
 
