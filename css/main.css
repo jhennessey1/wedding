@@ -14,6 +14,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    box-sizing: border-box;
 }
 
 /*
@@ -106,6 +107,17 @@ textarea {
     padding: 15px;
 }
 
+.page-header {
+    height: 30vh;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .header {
     background-image: url('../img/r-kong-1923.jpg');
     background-attachment: fixed;
@@ -125,6 +137,7 @@ textarea {
 
 .wedding-text {
     margin: 20px;
+    width: 100%;
 }
 
 .nav-bar {
@@ -138,10 +151,11 @@ textarea {
 .nav-links {
     list-style-type: none;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 50%;
-    height: 50px;
+    min-height: 50px;
     margin: auto;
 }
 
@@ -167,7 +181,7 @@ textarea {
 }
 
 .about {
-    margin-top: 40px;
+    margin: 40px 0;
     font-size: 20px;
 }
 
@@ -227,9 +241,54 @@ textarea {
     z-index: 100;
 }
 
-.item > img {
-    width: 90%;
-    height: auto;
+.accomodations {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.accomodation-link:hover {
+    color: #EB1FFD;
+}
+
+.rsvp-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.rsvp-input {
+    width: 50%;
+    border: 1px solid #9b9b9b;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 15px;
+    height: 37px;
+}
+
+.rsvp-dropdown {
+    width: 50%;
+    border: 1px solid #9b9b9b;
+    margin: 15px;
+    height: 37px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+}
+
+.rsvp-submit {
+    width: 50%;
+    background-color: #ffffff;
+    border: 1px solid #9b9b9b;
+    border-radius: 5px;
+    margin: 15px;
+    height: 37px;
+    padding: 5px 10px;
+}
+
+.rsvp-submit:hover {
+    border: 2px solid #9b9b9b;
 }
 
 
@@ -332,6 +391,18 @@ textarea {
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
+    .nav-links {
+        flex-direction: row;
+    }
+
+    .page-header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .wedding-text {
+        width: 50%;
+    }
 }
 
 @media print,
