@@ -191,12 +191,25 @@
                         method="POST"
                         class="rsvp-form"
                     >
-                        <input class="rsvp-input" placeholder="Name" type="text" name="name">
-                        <input class="rsvp-input" placeholder="Email" type="email" name="_replyto">
-                        <select class="rsvp-dropdown" name="meal-choice">
+                        <label class="rsvp-label" for="rsvp-name">Name</label>
+                        <input id="rsvp-name" class="rsvp-input" type="text" name="name">
+                        <label class="rsvp-label" for="rsvp-email">Email</label>
+                        <input id="rsvp-email" class="rsvp-input" type="email" name="_replyto">
+                        <label class="rsvp-label" for="rsvp-meal">Meal Choice</label>
+                        <select id="rsvp-meal" class="rsvp-dropdown" name="meal-choice">
                             <option value="meat">Meat</option>
                             <option value="not-meat">Not Meat</option>
                         </select>
+                        <label class="rsvp-label" for="additional-guests">
+                            If you are RSVP-ing for a family or bringing a +1, please list any additional names,
+                            email addresses, and meal choices here.
+                        </label>
+                        <textarea
+                            class="rsvp-textarea"
+                            id="additional-guests"
+                            name="additional-guests"
+                            placeholder="ex. Some Name, some.name@example.com, Meat"
+                        ></textarea>
                         <input class="rsvp-submit" type="submit" value="Send">
                     </form>
                 </div>

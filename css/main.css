@@ -269,7 +269,7 @@ textarea {
 }
 
 .rsvp-dropdown {
-    width: 50%;
+    width: 52%;
     border: 1px solid #9b9b9b;
     margin: 15px;
     height: 37px;
@@ -277,8 +277,21 @@ textarea {
     padding: 5px 10px;
 }
 
-.rsvp-submit {
+.rsvp-textarea {
     width: 50%;
+    border-radius: 5px;
+    border: 1px solid #9b9b9b;
+    margin: 15px;
+    padding: 5px 10px;
+    height: 100px;
+}
+
+.rsvp-label {
+    width: 50%;
+}
+
+.rsvp-submit {
+    width: 52%;
     background-color: #ffffff;
     border: 1px solid #9b9b9b;
     border-radius: 5px;
