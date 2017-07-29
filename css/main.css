@@ -149,6 +149,18 @@ textarea {
     visibility: hidden;
 }
 
+.navbar-collapsed {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: #eb1ffd;
+    color: #ffffff;
+}
+
+.caret {
+    transform: rotate(180deg);
+}
+/* TODO: MAKE NAVBAR RESPONSIVE!! */
 .nav-links {
     list-style-type: none;
     display: flex;
@@ -421,6 +433,10 @@ textarea {
 
     .nav-bar {
         visibility: visible;
+    }
+
+    .navbar-collapsed {
+        visibility: hidden;
     }
 }
 
