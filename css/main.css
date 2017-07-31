@@ -98,6 +98,7 @@ textarea {
 .container {
     margin-bottom: 30px;
     width: 100%;
+    background-color: #f5f5dc;
 }
 
 .sub-container {
@@ -244,6 +245,10 @@ textarea {
 
 .countdown {
     position: relative;
+}
+
+.tickcounter > iframe > .dcw > a {
+    background-color: #f5f5dc;
 }
 
 .click-shield {
